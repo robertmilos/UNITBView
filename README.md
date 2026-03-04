@@ -11,10 +11,7 @@ This branch serves as a proof-of-concept using a basic 3D template to demonstrat
 | **Development Environment** | Unity |
 | **Engine Version** | Unity 6.3 LTS (`6000.3.10f1`) |
 | **Graphics API** | WebGL 2.0 |
-| **Hardware Context** | Verified on Ryzen 5 7600X & Radeon RX 7800XT |
-| **Hardware Context** | Verified on Ryzen 5 7600X & Nvidia 4060Ti |
-| **Hardware Context** | Verified on Macbook M2 Air 13" |
-| **Hardware Context** | Verified on i5-8265H & UHD 620 |
+| **Hardware Context** | Verified on:<br> Ryzen 5 7600X & Radeon RX 7800XT <br> Ryzen 5 7600X & Nvidia 4060Ti <br> i5-8265H & UHD 620 <br> Apple M2 |
 
 ## 🌐 Deployment & Networking
 The build is served via a local backend and made accessible through the following configuration:
