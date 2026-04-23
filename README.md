@@ -21,3 +21,7 @@ The build is served via a local backend and made accessible through the followin
 The application has been verified to run flawlessly on the following browsers:
 * **Brave** (Chromium-based)
 * **Firefox** (Gecko-based)
+
+## Project Management
+Framework: Agile\
+Trello Board: https://trello.com/b/rC2fGora
