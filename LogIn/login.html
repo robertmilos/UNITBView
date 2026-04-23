@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNITBView</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="welcome-text">
+        <h1>UNITBView</h1>
+        <p>Bine ai venit pe platforma noastră!</p>
+    </div>
+
+    <div class="login-box">
+        <div id="authContainer">
+            <h2>Autentificare</h2>
+            
+            <div class="input-group">
+                <input type="email" id="emailInput" placeholder="Adresa de email">
+                <input type="password" id="passInput" placeholder="Parolă (min. 6 caractere)">
+                <div class="action-buttons">
+                    <button id="emailLoginBtn">Logare</button>
+                    <button id="emailSignupBtn" class="secondary">Creare Cont</button>
+                </div>
+            </div>
+
+            <div class="separator">sau</div>
+
+            <button id="googleBtn" class="google-btn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/Google_%22G%22_logo.svg" alt="Google">
+                Continuă cu Google
+            </button>
+        </div>
+
+        <div id="userProfile" class="hidden">
+            <img id="userImg" src="" alt="Avatar">
+            <h3 id="userName"></h3>
+            <p id="userEmail"></p>
+            <button id="logoutBtn" class="logout-btn">Deconectare</button>
+        </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
