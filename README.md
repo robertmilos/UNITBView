@@ -23,5 +23,5 @@ The application has been verified to run flawlessly on the following browsers:
 * **Firefox** (Gecko-based)
 
 ## Project Management
-Framework: Agile
+Framework: Agile\
 Trello Board: https://trello.com/b/rC2fGora
