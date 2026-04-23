@@ -1,0 +1,103 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #e9ecef;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('rectorat_slider.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.welcome-text {
+    text-align: center;
+    color: rgb(11, 11, 11); 
+    padding: 0 40px; 
+    top: 10%;
+    width: 100%;
+    position: absolute
+}
+
+.welcome-text p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.login-box {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 380px;
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+#emailLoginBtn { background: #007bff; color: white; }
+#emailSignupBtn { background: #6c757d; color: white; }
+button:hover { opacity: 0.9; }
+
+.separator {
+    margin: 20px 0;
+    color: #888;
+    position: relative;
+}
+
+.google-btn {
+    width: 100%;
+    background: white;
+    border: 1px solid #dadce0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #3c4043;
+}
+
+.hidden { display: none !important; }
+
+#userImg {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+    margin-bottom: 15px;
+}
+
+.logout-btn {
+    background: #dc3545;
+    color: white;
+    margin-top: 20px;
+}
