@@ -1,0 +1,1275 @@
+{
+  "info": {
+    "_postman_id": "5873e164-1e56-4c98-b4e9-bd3e76e77a1f",
+    "name": "UNITBView",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54255384",
+    "_collection_link": "https://go.postman.co/collection/54255384-5873e164-1e56-4c98-b4e9-bd3e76e77a1f?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Cont Valid",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"daria-stefania.gheorghe@student.unitbv.ro\",\r\n  \"password\": \"Daria27\",\r\n  \"returnSecureToken\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do",
+          "protocol": "https",
+          "host": [
+            "identitytoolkit",
+            "googleapis",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "accounts:signInWithPassword"
+          ],
+          "query": [
+            {
+              "key": "key",
+              "value": "AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Cont Valid",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"daria-stefania.gheorghe@student.unitbv.ro\",\r\n  \"password\": \"Daria27\",\r\n  \"returnSecureToken\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do",
+              "protocol": "https",
+              "host": [
+                "identitytoolkit",
+                "googleapis",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "accounts:signInWithPassword"
+              ],
+              "query": [
+                {
+                  "key": "key",
+                  "value": "AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do"
+                }
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Date",
+              "value": "Thu, 07 May 2026 10:25:39 GMT"
+            },
+            {
+              "key": "Expires",
+              "value": "Mon, 01 Jan 1990 00:00:00 GMT"
+            },
+            {
+              "key": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=UTF-8"
+            },
+            {
+              "key": "Vary",
+              "value": "Origin"
+            },
+            {
+              "key": "Vary",
+              "value": "X-Origin"
+            },
+            {
+              "key": "Vary",
+              "value": "Referer"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Server",
+              "value": "ESF"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "0"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "Alt-Svc",
+              "value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"kind\": \"identitytoolkit#VerifyPasswordResponse\",\n    \"localId\": \"RYK5klOSDuhVKrHVVIeOXo2kRZG3\",\n    \"email\": \"daria-stefania.gheorghe@student.unitbv.ro\",\n    \"displayName\": \"\",\n    \"idToken\": \"eyJhbGciOiJSUzI1NiIsImtpZCI6Ijg2OGU0YWNlMGI2NTE2ZDM2YjlmNTZkZThjZTQ5Nzg4ZmNjZGFjNDMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vdW5pdGJ2aWV3IiwiYXVkIjoidW5pdGJ2aWV3IiwiYXV0aF90aW1lIjoxNzc4MTQ5NTM5LCJ1c2VyX2lkIjoiUllLNWtsT1NEdWhWS3JIVlZJZU9YbzJrUlpHMyIsInN1YiI6IlJZSzVrbE9TRHVoVktySFZWSWVPWG8ya1JaRzMiLCJpYXQiOjE3NzgxNDk1MzksImV4cCI6MTc3ODE1MzEzOSwiZW1haWwiOiJkYXJpYS1zdGVmYW5pYS5naGVvcmdoZUBzdHVkZW50LnVuaXRidi5ybyIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJkYXJpYS1zdGVmYW5pYS5naGVvcmdoZUBzdHVkZW50LnVuaXRidi5ybyJdfSwic2lnbl9pbl9wcm92aWRlciI6InBhc3N3b3JkIn19.ImMtUjaomA9lqIr63LpUNgVTQ4iqP_j4Z-E4kqbKyJ1RAr2aBLa1ssli_Rplyf1lEDV2qU0slnelpGpvkPc82IHS_it6IvtF84WoQS8UAvi2MA78wlFmmiTEAndzIMJ58016EomxvqtACpFsHcK8fdg7GjNlmvTOvs73bMe8NVF-3eIu9_DrJp2XQmDZzhn5bU05xvd1fPXnRnr085i1EjM19mNBY0_FwM2mMlJgU7cg9H7g6jyRhu_T-ZAqVt1iAO0tj5KuPMTv2aTXHU8uUW9SnAD-s70yo4BK3GDiIsCMEm69ie1XeG8exNnAvbG543zSanqVTxEe6Vs7FO7c5Q\",\n    \"registered\": true,\n    \"refreshToken\": \"AMf-vBwy0k5msHqVGZkDeBmRdq53LTDU7ScgM47hmUABhlKawfRcCVK-i5ogZbqYK_OBqaDZ8zLFo4hHz-ZzqtLMtNLF5pz4Ly5M5LPL42X2DPvnLKQFJbH2oHdMmeARixJQ07Hfuc8e2PsqPN1yCSAxhlCTlp1G1BkeNWv2Jiu4RvZZMSOmKiYge5ddJ3polmINc85HPgYAJGqVWcmPgUDqmA3MgJJEb0gZGQzhi6_2OWCYszjg7xM\",\n    \"expiresIn\": \"3600\"\n}"
+        }
+      ]
+    },
+    {
+      "name": "Parola incorecta",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"daria-stefania.gheorghe@student.unitbv.ro\",\r\n  \"password\": \"Daria2\",\r\n  \"returnSecureToken\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do",
+          "protocol": "https",
+          "host": [
+            "identitytoolkit",
+            "googleapis",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "accounts:signInWithPassword"
+          ],
+          "query": [
+            {
+              "key": "key",
+              "value": "AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Parola incorecta",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"daria-stefania.gheorghe@student.unitbv.ro\",\r\n  \"password\": \"Daria2\",\r\n  \"returnSecureToken\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do",
+              "protocol": "https",
+              "host": [
+                "identitytoolkit",
+                "googleapis",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "accounts:signInWithPassword"
+              ],
+              "query": [
+                {
+                  "key": "key",
+                  "value": "AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do"
+                }
+              ]
+            }
+          },
+          "status": "Bad Request",
+          "code": 400,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Date",
+              "value": "Thu, 07 May 2026 10:26:18 GMT"
+            },
+            {
+              "key": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "key": "Expires",
+              "value": "Mon, 01 Jan 1990 00:00:00 GMT"
+            },
+            {
+              "key": "Vary",
+              "value": "Origin"
+            },
+            {
+              "key": "Vary",
+              "value": "X-Origin"
+            },
+            {
+              "key": "Vary",
+              "value": "Referer"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=UTF-8"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Server",
+              "value": "ESF"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "0"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "Alt-Svc",
+              "value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"error\": {\n        \"code\": 400,\n        \"message\": \"INVALID_LOGIN_CREDENTIALS\",\n        \"errors\": [\n            {\n                \"message\": \"INVALID_LOGIN_CREDENTIALS\",\n                \"domain\": \"global\",\n                \"reason\": \"invalid\"\n            }\n        ]\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Email inexistent",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"daria-stefania@student.unitbv.ro\",\r\n  \"password\": \"Daria27\",\r\n  \"returnSecureToken\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do",
+          "protocol": "https",
+          "host": [
+            "identitytoolkit",
+            "googleapis",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "accounts:signInWithPassword"
+          ],
+          "query": [
+            {
+              "key": "key",
+              "value": "AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Email inexistent",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"daria-stefania@student.unitbv.ro\",\r\n  \"password\": \"Daria27\",\r\n  \"returnSecureToken\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do",
+              "protocol": "https",
+              "host": [
+                "identitytoolkit",
+                "googleapis",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "accounts:signInWithPassword"
+              ],
+              "query": [
+                {
+                  "key": "key",
+                  "value": "AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do"
+                }
+              ]
+            }
+          },
+          "status": "Bad Request",
+          "code": 400,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Expires",
+              "value": "Mon, 01 Jan 1990 00:00:00 GMT"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 07 May 2026 10:26:29 GMT"
+            },
+            {
+              "key": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "Vary",
+              "value": "Origin"
+            },
+            {
+              "key": "Vary",
+              "value": "X-Origin"
+            },
+            {
+              "key": "Vary",
+              "value": "Referer"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=UTF-8"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Server",
+              "value": "ESF"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "0"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "Alt-Svc",
+              "value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"error\": {\n        \"code\": 400,\n        \"message\": \"INVALID_LOGIN_CREDENTIALS\",\n        \"errors\": [\n            {\n                \"message\": \"INVALID_LOGIN_CREDENTIALS\",\n                \"domain\": \"global\",\n                \"reason\": \"invalid\"\n            }\n        ]\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Parola scurta",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"test@gmail.com\",\r\n  \"password\": \"123\",\r\n  \"returnSecureToken\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do",
+          "protocol": "https",
+          "host": [
+            "identitytoolkit",
+            "googleapis",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "accounts:signInWithPassword"
+          ],
+          "query": [
+            {
+              "key": "key",
+              "value": "AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Parola scurta",
+          "originalRequest": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"test@gmail.com\",\r\n  \"password\": \"123\",\r\n  \"returnSecureToken\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do",
+              "protocol": "https",
+              "host": [
+                "identitytoolkit",
+                "googleapis",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "accounts:signInWithPassword"
+              ],
+              "query": [
+                {
+                  "key": "key",
+                  "value": "AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do"
+                }
+              ]
+            }
+          },
+          "status": "Bad Request",
+          "code": 400,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Expires",
+              "value": "Mon, 01 Jan 1990 00:00:00 GMT"
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 07 May 2026 10:26:38 GMT"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "key": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "Vary",
+              "value": "Origin"
+            },
+            {
+              "key": "Vary",
+              "value": "X-Origin"
+            },
+            {
+              "key": "Vary",
+              "value": "Referer"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=UTF-8"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Server",
+              "value": "ESF"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "0"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "Alt-Svc",
+              "value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"error\": {\n        \"code\": 400,\n        \"message\": \"INVALID_LOGIN_CREDENTIALS\",\n        \"errors\": [\n            {\n                \"message\": \"INVALID_LOGIN_CREDENTIALS\",\n                \"domain\": \"global\",\n                \"reason\": \"invalid\"\n            }\n        ]\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Parola fara majuscula",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"test@gmail.com\",\r\n  \"password\": \"abcd123\",\r\n  \"returnSecureToken\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do",
+          "protocol": "https",
+          "host": [
+            "identitytoolkit",
+            "googleapis",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "accounts:signInWithPassword"
+          ],
+          "query": [
+            {
+              "key": "key",
+              "value": "AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Parola fara majuscula",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"test@gmail.com\",\r\n  \"password\": \"abcd123\",\r\n  \"returnSecureToken\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do",
+              "protocol": "https",
+              "host": [
+                "identitytoolkit",
+                "googleapis",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "accounts:signInWithPassword"
+              ],
+              "query": [
+                {
+                  "key": "key",
+                  "value": "AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do"
+                }
+              ]
+            }
+          },
+          "status": "Bad Request",
+          "code": 400,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Date",
+              "value": "Thu, 07 May 2026 10:26:47 GMT"
+            },
+            {
+              "key": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "key": "Expires",
+              "value": "Mon, 01 Jan 1990 00:00:00 GMT"
+            },
+            {
+              "key": "Vary",
+              "value": "Origin"
+            },
+            {
+              "key": "Vary",
+              "value": "X-Origin"
+            },
+            {
+              "key": "Vary",
+              "value": "Referer"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=UTF-8"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Server",
+              "value": "ESF"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "0"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "Alt-Svc",
+              "value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"error\": {\n        \"code\": 400,\n        \"message\": \"INVALID_LOGIN_CREDENTIALS\",\n        \"errors\": [\n            {\n                \"message\": \"INVALID_LOGIN_CREDENTIALS\",\n                \"domain\": \"global\",\n                \"reason\": \"invalid\"\n            }\n        ]\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Email invalid",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"test.gmail.com\",\r\n  \"password\": \"Parolanoua1234\",\r\n  \"returnSecureToken\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do",
+          "protocol": "https",
+          "host": [
+            "identitytoolkit",
+            "googleapis",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "accounts:signInWithPassword"
+          ],
+          "query": [
+            {
+              "key": "key",
+              "value": "AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Email invalid",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"test.gmail.com\",\r\n  \"password\": \"Parolanoua1234\",\r\n  \"returnSecureToken\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do",
+              "protocol": "https",
+              "host": [
+                "identitytoolkit",
+                "googleapis",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "accounts:signInWithPassword"
+              ],
+              "query": [
+                {
+                  "key": "key",
+                  "value": "AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do"
+                }
+              ]
+            }
+          },
+          "status": "Bad Request",
+          "code": 400,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 07 May 2026 10:26:58 GMT"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "key": "Expires",
+              "value": "Mon, 01 Jan 1990 00:00:00 GMT"
+            },
+            {
+              "key": "Vary",
+              "value": "Origin"
+            },
+            {
+              "key": "Vary",
+              "value": "X-Origin"
+            },
+            {
+              "key": "Vary",
+              "value": "Referer"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=UTF-8"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Server",
+              "value": "ESF"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "0"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "Alt-Svc",
+              "value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"error\": {\n        \"code\": 400,\n        \"message\": \"INVALID_EMAIL\",\n        \"errors\": [\n            {\n                \"message\": \"INVALID_EMAIL\",\n                \"domain\": \"global\",\n                \"reason\": \"invalid\"\n            }\n        ]\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Lipsa parola",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"test@gmail.com\",\r\n  \"password\": \"\",\r\n  \"returnSecureToken\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do",
+          "protocol": "https",
+          "host": [
+            "identitytoolkit",
+            "googleapis",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "accounts:signInWithPassword"
+          ],
+          "query": [
+            {
+              "key": "key",
+              "value": "AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Lipsa parola",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"test@gmail.com\",\r\n  \"password\": \"\",\r\n  \"returnSecureToken\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do",
+              "protocol": "https",
+              "host": [
+                "identitytoolkit",
+                "googleapis",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "accounts:signInWithPassword"
+              ],
+              "query": [
+                {
+                  "key": "key",
+                  "value": "AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do"
+                }
+              ]
+            }
+          },
+          "status": "Bad Request",
+          "code": 400,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Date",
+              "value": "Thu, 07 May 2026 10:27:10 GMT"
+            },
+            {
+              "key": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "Expires",
+              "value": "Mon, 01 Jan 1990 00:00:00 GMT"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "key": "Vary",
+              "value": "Origin"
+            },
+            {
+              "key": "Vary",
+              "value": "X-Origin"
+            },
+            {
+              "key": "Vary",
+              "value": "Referer"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=UTF-8"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Server",
+              "value": "ESF"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "0"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "Alt-Svc",
+              "value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"error\": {\n        \"code\": 400,\n        \"message\": \"MISSING_PASSWORD\",\n        \"errors\": [\n            {\n                \"message\": \"MISSING_PASSWORD\",\n                \"domain\": \"global\",\n                \"reason\": \"invalid\"\n            }\n        ]\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Lipsa email",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"\",\r\n  \"password\": \"aa\",\r\n  \"returnSecureToken\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do",
+          "protocol": "https",
+          "host": [
+            "identitytoolkit",
+            "googleapis",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "accounts:signInWithPassword"
+          ],
+          "query": [
+            {
+              "key": "key",
+              "value": "AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Lipsa email",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"\",\r\n  \"password\": \"aa\",\r\n  \"returnSecureToken\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do",
+              "protocol": "https",
+              "host": [
+                "identitytoolkit",
+                "googleapis",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "accounts:signInWithPassword"
+              ],
+              "query": [
+                {
+                  "key": "key",
+                  "value": "AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do"
+                }
+              ]
+            }
+          },
+          "status": "Bad Request",
+          "code": 400,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "Date",
+              "value": "Thu, 07 May 2026 10:27:21 GMT"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "key": "Expires",
+              "value": "Mon, 01 Jan 1990 00:00:00 GMT"
+            },
+            {
+              "key": "Vary",
+              "value": "Origin"
+            },
+            {
+              "key": "Vary",
+              "value": "X-Origin"
+            },
+            {
+              "key": "Vary",
+              "value": "Referer"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=UTF-8"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Server",
+              "value": "ESF"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "0"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "Alt-Svc",
+              "value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"error\": {\n        \"code\": 400,\n        \"message\": \"INVALID_EMAIL\",\n        \"errors\": [\n            {\n                \"message\": \"INVALID_EMAIL\",\n                \"domain\": \"global\",\n                \"reason\": \"invalid\"\n            }\n        ]\n    }\n}"
+        }
+      ]
+    },
+    {
+      "name": "Lipsa email & parola",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"email\": \"\",\r\n  \"password\": \"\",\r\n  \"returnSecureToken\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do",
+          "protocol": "https",
+          "host": [
+            "identitytoolkit",
+            "googleapis",
+            "com"
+          ],
+          "path": [
+            "v1",
+            "accounts:signInWithPassword"
+          ],
+          "query": [
+            {
+              "key": "key",
+              "value": "AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do"
+            }
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Lipsa email & parola",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"\",\r\n  \"password\": \"\",\r\n  \"returnSecureToken\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do",
+              "protocol": "https",
+              "host": [
+                "identitytoolkit",
+                "googleapis",
+                "com"
+              ],
+              "path": [
+                "v1",
+                "accounts:signInWithPassword"
+              ],
+              "query": [
+                {
+                  "key": "key",
+                  "value": "AIzaSyAMgmLpNZT15WcVeeXtOxyb872Vw8Hc6Do"
+                }
+              ]
+            }
+          },
+          "status": "Bad Request",
+          "code": 400,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Date",
+              "value": "Thu, 07 May 2026 10:27:32 GMT"
+            },
+            {
+              "key": "Expires",
+              "value": "Mon, 01 Jan 1990 00:00:00 GMT"
+            },
+            {
+              "key": "Cache-Control",
+              "value": "no-cache, no-store, max-age=0, must-revalidate"
+            },
+            {
+              "key": "Pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "Vary",
+              "value": "Origin"
+            },
+            {
+              "key": "Vary",
+              "value": "X-Origin"
+            },
+            {
+              "key": "Vary",
+              "value": "Referer"
+            },
+            {
+              "key": "Content-Type",
+              "value": "application/json; charset=UTF-8"
+            },
+            {
+              "key": "Content-Encoding",
+              "value": "gzip"
+            },
+            {
+              "key": "Server",
+              "value": "ESF"
+            },
+            {
+              "key": "X-XSS-Protection",
+              "value": "0"
+            },
+            {
+              "key": "X-Frame-Options",
+              "value": "SAMEORIGIN"
+            },
+            {
+              "key": "X-Content-Type-Options",
+              "value": "nosniff"
+            },
+            {
+              "key": "Alt-Svc",
+              "value": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"error\": {\n        \"code\": 400,\n        \"message\": \"INVALID_EMAIL\",\n        \"errors\": [\n            {\n                \"message\": \"INVALID_EMAIL\",\n                \"domain\": \"global\",\n                \"reason\": \"invalid\"\n            }\n        ]\n    }\n}"
+        }
+      ]
+    }
+  ]
+}
